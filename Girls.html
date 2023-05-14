@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="robots" content="none,noindex,nofollow">
+    <title>HEW</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+        <!--font-awesomeの読み込み-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"  integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              //位置・時間調整
+              var adjust = -30;
+              var time = 600;
+              //URLのハッシュ値を取得
+              var urlHash = location.hash;
+              //ハッシュ値があればページ内スクロール
+              if(urlHash) {
+                //スクロールを0に戻しておく
+                $('body,html').stop().scrollTop(0);
+                setTimeout(function () {
+                  //ロード時の処理を待ち、時間差でスクロール実行
+                  scrollToAnker(urlHash) ;
+                }, 100);
+              }
+              //通常のクリック時
+              $('a[href^="#"]').on('click', function(event) {
+                event.preventDefault();
+                // ハッシュ値を取得して URI デコードする
+                var decodedHash = decodeURI(this.hash);
+                // ハッシュの確認
+                console.log(decodedHash);
+                //リンク先が#か空だったらhtmlに
+                var hash = decodedHash == "#" || decodedHash == "" ? 'html' : decodedHash;
+                //スクロール実行
+                scrollToAnker(hash);
+                return false;
+              });
+              // 関数：スムーススクロール
+              // 指定したアンカー(#ID)へアニメーションでスクロール
+              function scrollToAnker(hash) {
+                var target = $(hash);
+                var position = target.offset().top + adjust;
+                $('body,html').stop().animate({scrollTop:position}, time, 'swing');
+              }
+            })
+          </script>
+</head>
+<body>
+
+
+<div id="top"></div>
+<!-- ===+++header+++=== -->
+<header>
+    <div class="header-box">
+        <div class="header-left">
+            <p>TEL 123-456-789</p>
+        </div>
+        <div class="header-light">
+            <i class="far fa-user"></i>
+            <p><a href="../IT41-122/PHP/public/login_form.php">ログイン</a></p>
+        </div>
+    </div>
+
+
+<!-- logo-box -->
+<a href="./index.html"><div class="logo-image"></div></a>
+
+<!-- title-box -->
+<div class="title-box">
+    <p><a href="./index.html">-COOL CHILD-</a></p>
+</div>
+
+<!-- select-box -->
+<div class="select-box">
+    <ul class="select-ul">
+        <li><a href="./Newbornbaby.html">新生児</a></li>
+        <li><a href="./Baby.html">ベビー</a></li>
+        <li><a href="./Kids.html">キッズ</a></li>
+        <li><a href="./Boys.html">メンズ</a></li>
+        <li><a href="./Girls.html">レディース</a></li>
+    </ul>
+</div>
+</header>
+
+<main>
+    <div class="top-img"><img src="./images/girls-top.jpg"></div>
+    <strong><div class="title">おすすめのコーディネート</div></strong>
+    
+    <div class="bg-image"></div>
+    
+    <ul>
+    <li class="list01">
+        <div class="hover079">
+        <div id="hew079"><div class="margin"><a href="detail.html#hew079"><img src="images/hew079.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover075">
+        <div id="hew075"><div class="margin"><a href="detail.html#hew075"><img src="images/hew075.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover081">
+        <div id="hew081"><div class="margin"><a href="detail.html#hew081"><img src="images/hew081.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+    </li>
+    <li class="list02">
+        <div class="hover063">
+        <div id="hew063"><div class="margin"><a href="detail.html#hew063"><img src="images/hew063.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover069">
+        <div id="hew069"><div class="margin"><a href="detail.html#hew069"><img src="images/hew069.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover067">
+        <div id="hew067"><div class="margin"><a href="detail.html#hew067"><img src="images/hew067.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+    </li>
+    <li class="list03">
+        <div class="hover056">
+        <div id="hew056"><div class="margin"><a href="detail.html#hew056"><img src="images/hew056.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover074">
+        <div id="hew074"><div class="margin"><a href="detail.html#hew074"><img src="images/hew074.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover078">
+        <div id="hew078"><div class="margin"><a href="detail.html#hew078"><img src="images/hew078.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+    </li>
+    <li class="list04">
+        <div class="hover060">
+        <div id="hew060"><div class="margin"><a href="detail.html#hew060"><img src="images/hew060.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover061">
+        <div id="hew061"><div class="margin"><a href="detail.html#hew061"><img src="images/hew061.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover080">
+        <div id="hew080"><div class="margin"><a href="detail.html#hew080"><img src="images/hew080.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+    </li>
+    <li class="list05">
+        <div class="hover062">
+        <div id="hew062"><div class="margin"><a href="detail.html#hew062"><img src="images/hew062.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover066">
+        <div id="hew066"><div class="margin"><a href="detail.html#hew066"><img src="images/hew066.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+        <div class="hover070">
+        <div id="hew070"><div class="margin"><a href="detail.html#hew070"><img src="images/hew070.jpg"></a></div></div>
+        <div class="mask">
+            <div class="caption">30%OFF!</div>
+        </div>
+    </div>
+    </li>
+</ul>
+</main>
+
+
+
+        <!-- logo-box -->
+        <div class="top-box2">
+            <a href="#top"><img src="images/top001.svg"></div></a>
+        </div>
+
+
+
+
+<footer>
+    <p>© COOL CHILD</p>
+</footer>
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==' crossorigin='anonymous'></script>
+<script src="js/slick.min.js"></script>
+<script src="./js/move.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+
+main{
+    width: 100%;
+    height: auto;
+    margin-top: 22px;
+}
+main .title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #e9e9e9;
+    color: #494949;
+    padding: 50px 0 50px 0;
+    margin-top: 30px;
+    font-size: 28px;
+}
+main .bg-image{
+    background: url(../images/bg001.png);
+    width: 100%;
+    height: 350%;
+    position: absolute;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+main .top-img img{
+    width: 36.4%;
+    height: 55.4%;
+    margin-left: 480px;
+}
+main .top-img img{
+    max-width: 100%;
+    height: auto;
+    border: 6mm ridge #b19066;
+}
+main img{
+    width: 300px;
+    height: auto;
+}
+main a{
+    display: block;
+}
+main .margin{
+    margin: 0 30px 0 30px;
+}
+.list01,.list02,.list03,.list04,.list05{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 60px 0;
+}
+.list01 img,.list02 img,.list03 img,.list04 img,.list05 img{
+    background-color: #cfdac3;
+    padding: 5%;
+}
+
+
+.hover002,.hover005,.hover007,.hover011,.hover018,.hover001,.hover021,.hover023,.hover037,.hover012,.hover123,.hover124,.hover015,.hover016,.hover125,.hover006,.hover025,.hover026,.hover028,.hover032,.hover036,.hover029,.hover034,.hover038,.hover039,.hover040,.hover014,.hover033,.hover127,.hover027,.hover086,.hover087,.hover090,.hover088,.hover092,.hover094,.hover098,.hover102,.hover106,.hover100,.hover101,.hover110,.hover104,.hover109,.hover107,.hover079,.hover075,.hover081,.hover063,.hover069,.hover067,.hover056,.hover074,.hover078,.hover060,.hover061,.hover080,.hover062,.hover066,.hover070,.hover003,.hover010,.hover022,.hover020,.hover024,.hover051,.hover050,.hover054,.hover055,.hover065,.hover068,.hover073,.hover045,.hover071,.hover076{
+	overflow: hidden;
+    position: relative;
+}
+
+
+.hover002 .caption,.hover005 .caption,.hover007 .caption,.hover011 .caption,.hover018 .caption,.hover001 .caption,.hover021 .caption,.hover023 .caption,.hover037 .caption,.hover012 .caption,.hover123 .caption,.hover124 .caption,.hover015 .caption,.hover016 .caption,.hover125 .caption,.hover006 .caption,.hover025 .caption,.hover026 .caption,.hover028 .caption,.hover032 .caption,.hover036 .caption,.hover029 .caption,.hover034 .caption,.hover038 .caption,.hover039 .caption,.hover040 .caption,.hover014 .caption,.hover033 .caption,.hover127 .caption,.hover027 .caption,.hover086 .caption,.hover087 .caption,.hover090 .caption,.hover088 .caption,.hover092 .caption,.hover094 .caption,.hover098 .caption,.hover102 .caption,.hover106 .caption,.hover100 .caption,.hover101 .caption,.hover110 .caption,.hover104 .caption,.hover109 .caption,.hover107 .caption,.hover079 .caption,.hover075 .caption,.hover081 .caption,.hover063 .caption,.hover069 .caption,.hover067 .caption,.hover056 .caption,.hover074 .caption,.hover078 .caption,.hover060 .caption,.hover061 .caption,.hover080 .caption,.hover062 .caption,.hover066 .caption,.hover070 .caption,.hover003 .caption,.hover010 .caption,.hover022 .caption,.hover020 .caption,.hover024 .caption,.hover051 .caption,.hover050 .caption,.hover054 .caption,.hover055 .caption,.hover065 .caption,.hover068 .caption,.hover073 .caption,.hover045 .caption,.hover071 .caption,.hover076 .caption{
+	font-size:		130%;
+	color:			#fff;
+	padding-top:		80px;
+	padding-left:		20px;
+}
+.hover002 .mask,.hover005 .mask,.hover007 .mask,.hover011 .mask,.hover018 .mask,.hover001 .mask,.hover021 .mask,.hover023 .mask,.hover037 .mask,.hover012 .mask,.hover123 .mask,.hover124 .mask,.hover015 .mask,.hover016 .mask,.hover125 .mask,.hover006 .mask,.hover025 .mask,.hover026 .mask,.hover028 .mask,.hover032 .mask,.hover036 .mask,.hover029 .mask,.hover034 .mask,.hover038 .mask,.hover039 .mask,.hover040 .mask,.hover014 .mask,.hover033 .mask,.hover127 .mask,.hover027 .mask,.hover086 .mask,.hover087 .mask,.hover090 .mask,.hover088 .mask,.hover092 .mask,.hover094 .mask,.hover098 .mask,.hover102 .mask,.hover106 .mask,.hover100 .mask,.hover101 .mask,.hover110 .mask,.hover104 .mask,.hover109 .mask,.hover107 .mask,.hover079 .mask,.hover075 .mask,.hover081 .mask,.hover063 .mask,.hover069 .mask,.hover067 .mask,.hover056 .mask,.hover074 .mask,.hover078 .mask,.hover060 .mask,.hover061 .mask,.hover080 .mask,.hover062 .mask,.hover066 .mask,.hover070 .mask,.hover003 .mask,.hover010 .mask,.hover022 .mask,.hover020 .mask,.hover024 .mask,.hover051 .mask,.hover050 .mask,.hover054 .mask,.hover055 .mask,.hover065 .mask,.hover068 .mask,.hover073 .mask,.hover045 .mask,.hover071 .mask,.hover076 .mask {
+	width:			41.6%;	/* 画像の半分の大きさにする */
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	margin-left:		-43%;	/* 枠の左に置いて表示させない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.hover002:hover .mask,.hover005:hover .mask,.hover007:hover .mask,.hover011:hover .mask,.hover018:hover .mask,.hover001:hover .mask,.hover021:hover .mask,.hover023:hover .mask,.hover037:hover .mask,.hover012:hover .mask,.hover123:hover .mask,.hover124:hover .mask,.hover015:hover .mask,.hover016:hover .mask,.hover125:hover .mask,.hover006:hover .mask,.hover025:hover .mask,.hover026:hover .mask,.hover028:hover .mask,.hover032:hover .mask,.hover036:hover .mask,.hover029:hover .mask,.hover034:hover .mask,.hover038:hover .mask,.hover039:hover .mask,.hover040:hover .mask,.hover014:hover .mask,.hover033:hover .mask,.hover127:hover .mask,.hover027:hover .mask,.hover086:hover .mask,.hover087:hover .mask,.hover090:hover .mask,.hover088:hover .mask,.hover092:hover .mask,.hover094:hover .mask,.hover098:hover .mask,.hover102:hover .mask,.hover106:hover .mask,.hover100:hover .mask,.hover101:hover .mask,.hover110:hover .mask,.hover104:hover .mask,.hover109:hover .mask,.hover107:hover .mask,.hover079:hover .mask,.hover075:hover .mask,.hover081:hover .mask,.hover063:hover .mask,.hover069:hover .mask,.hover067:hover .mask,.hover056:hover .mask,.hover074:hover .mask,.hover078:hover .mask,.hover060:hover .mask,.hover061:hover .mask,.hover080:hover .mask,.hover062:hover .mask,.hover066:hover .mask,.hover070:hover .mask,.hover003:hover .mask,.hover010:hover .mask,.hover022:hover .mask,.hover020:hover .mask,.hover024:hover .mask,.hover051:hover .mask,.hover050:hover .mask,.hover054:hover .mask,.hover055:hover .mask,.hover065:hover .mask,.hover068:hover .mask,.hover073:hover .mask,.hover045:hover .mask,.hover071:hover .mask,.hover076:hover .mask{
+	margin-left:		0px;	/* 右にずらして表示する */
+}
+.hover002 img,.hover005 img,.hover007 img,.hover011 img,.hover018 img,.hover001 img,.hover021 img,.hover023 img,.hover037 img,.hover012 img,.hover123 img,.hover124 img,.hover015 img,.hover016 img,.hover125 img,.hover006 img,.hover025 img,.hover026 img,.hover028 img,.hover032 img,.hover036 img,.hover029 img,.hover034 img,.hover038 img,.hover039 img,.hover040 img,.hover014 img,.hover033 img,.hover127 img,.hover027 img,.hover086 img,.hover087 img,.hover090 img,.hover088 img,.hover092 img,.hover094 img,.hover098 img,.hover102 img,.hover106 img,.hover100 img,.hover101 img,.hover110 img,.hover104 img,.hover109 img,.hover107 img,.hover079 img,.hover075 img,.hover081 img,.hover063 img,.hover069 img,.hover067 img,.hover056 img,.hover074 img,.hover078 img,.hover060 img,.hover061 img,.hover080 img,.hover062 img,.hover066 img,.hover070 img,.hover003 img,.hover010 img,.hover022 img,.hover020 img,.hover024 img,.hover051 img,.hover050 img,.hover054 img,.hover055 img,.hover065 img,.hover068 img,.hover073 img,.hover045 img,.hover071 img,.hover076 img{
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.hover002:hover img,.hover005:hover img,.hover007:hover img,.hover011:hover img,.hover018:hover img,.hover001:hover img,.hover021:hover img,.hover023:hover img,.hover037:hover img,.hover015:hover img,.hover016:hover img,.hover125:hover img,.hover012:hover img,.hover123:hover img,.hover124:hover img,.hover006:hover img,.hover025:hover img,.hover026:hover img,.hover028:hover img,.hover032:hover img,.hover036:hover img,.hover029:hover img,.hover034:hover img,.hover038:hover img,.hover039:hover img,.hover040:hover img,.hover014:hover img,.hover033:hover img,.hover127:hover img,.hover027:hover img,.hover086:hover img,.hover087:hover img,.hover090:hover img,.hover088:hover img,.hover092:hover img,.hover094:hover img,.hover098:hover img,.hover102:hover img,.hover106:hover img,.hover100:hover img,.hover101:hover img,.hover110:hover img,.hover104:hover img,.hover109:hover img,.hover107:hover img,.hover079:hover img,.hover075:hover img,.hover081:hover img,.hover063:hover img,.hover069:hover img,.hover067:hover img,.hover056:hover img,.hover074:hover img,.hover078:hover img,.hover060:hover img,.hover061:hover img,.hover080:hover img,.hover062:hover img,.hover066:hover img,.hover070:hover img,.hover003:hover img,.hover010:hover img,.hover022:hover img,.hover020:hover img,.hover024:hover img,.hover051:hover img,.hover050:hover img,.hover054:hover img,.hover055:hover img,.hover065:hover img,.hover068:hover img,.hover073:hover img,.hover045:hover img,.hover071:hover img,.hover076:hover img {
+	margin-left:		40%;	/* 画像を半分サイズ、右にずらす */
+}
+
+
+/* fadeUp */
+
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0.2;
+      transform: translateY(80px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+    
+    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+    
+.fadeUp{
+        opacity: 0;
+    }
+    
+    
+    
+    
+.top-box{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 1350px;
+    top: 3200px;
+}
+.top-box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.8s;
+}
+.top-box img:hover{
+    background: rgb(50, 92, 64);
+    transition: 0.8s;
+}
+
+.top-box2{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 1350px;
+    top: 3282px;
+}
+.top-box2 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.8s;
+}
+.top-box2 img:hover{
+    background: rgb(50, 92, 64);
+    transition: 0.8s;
+}
+
+.top-box3{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 1350px;
+    top: 3376px;
+}
+.top-box3 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.8s;
+}
+.top-box3 img:hover{
+    background: rgb(50, 92, 64);
+    transition: 0.8s;
+}

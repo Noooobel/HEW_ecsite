@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Oswald','Noto Sans JP',"DinMedium","メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+}
+
+
+
+.header-box{
+    width: 100%;
+    background: rgb(50, 92, 64);
+    display: flex;
+    justify-content: center;
+}
+.header-box p a{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.header-box p{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+/* header-left */
+.header-box .header-left{
+    margin-right: 20%;
+    display: flex;
+}
+.header-box .header-left p{
+    padding: 8px 0 12px 0;
+}
+.header-box .header-left i{
+    width: 20px;
+    margin-top: 9px;
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/* header-light */
+.header-box .header-light{
+    margin-left: 20%;
+    display: flex;
+}
+.header-box .header-light i{
+    margin-top: 9px;
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
+}
+.header-box .header-light p{
+    padding: 8px 0 12px 0;
+}
+
+/* header-hover */
+.header-box p a:hover{
+    color: rgb(211, 211, 211);
+}
+
+/* logo-image */
+.logo-image{
+    background: url(../images/logo001.svg)no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 1%;
+    left: 46%;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.8s;
+}
+.logo-image:hover{
+    background-color: rgb(50, 92, 64);
+    transition: 0.8s;
+}
+
+
+/* title-box */
+.title-box{
+    margin: 55px 0 0 0;
+}
+.title-box p{
+    text-align: center;
+}
+.title-box p a{
+    color: #494949;
+    font-size: 46px;
+    font-family: cursive;
+}
+
+
+.select-box{
+    width: 100%;
+    height: auto;
+    background: rgb(255, 255, 255);
+}
+.select-box .select-ul{
+    display: flex;
+    justify-content: center;
+}
+.select-box .select-ul li{
+    margin: 10px 0 0 0;
+    padding: 5px 0 5px 0;
+    transition: 0.8s;
+}
+.select-box .select-ul li a{
+    font-size: 16px;
+    padding: 5px 30px 5px 30px;
+    font-weight: 700;
+    color: rgb(50, 92, 64);
+}
+.select-box .select-ul li a:hover{
+    transition: 0.8s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 92, 64);
+}
+
+
+
+/* article */
+
+.article{
+    width: 100%;
+    height: 200%;
+    margin-top: 350px;
+    padding-top: 200px;
+}
+
+.article .bg-image{
+    background: url(../images/bg001.png);
+    width: 100%;
+    height: 124%;
+    position: absolute;
+    background-attachment: fixed;
+    top: 700px;
+    z-index: -1;
+}
+
+.article .top-image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 47.4%;
+    height: 55.4%;
+    position: absolute;
+    top: 34%;
+    left: 25.7%;
+}
+.top-image img{
+    max-width: 100%;
+    height: auto;
+    border: 6mm ridge #b19066;
+}
+.pickup{
+    width: 100%;
+    height: 400px;
+    background-color: #e9e9e9;
+    padding-top: 10px;
+}
+.pickup .text01{
+    color: #494949;
+    font-size: 32px;
+    margin-left: 46.5%;
+}
+
+/* fadeUp */
+
+.pickup .fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(80px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+    
+    /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+    
+    .pickup .text01{
+        opacity: 1;
+    }
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+      width:50%;
+      margin:0 auto;
+      margin-top: 30px;
+  }
+  
+  .slider img {
+      width:100%;/*スライダー内の画像を横幅100%に*/
+      height:auto;
+      transition: 1s;
+  }
+  
+  .slider img:hover{
+    opacity: 0.5;
+    transition: 1s;
+  }
+  
+  /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+  
+  .slider .slick-slide {
+      margin:0 10px;
+  }
+  
+  /*矢印の設定*/
+  
+  /*戻る、次へ矢印の位置*/
+  .slick-prev, 
+  .slick-next {
+      position: absolute;/*絶対配置にする*/
+      top: 50%;
+      cursor: pointer;/*マウスカーソルを指マークに*/
+      outline: none;/*クリックをしたら出てくる枠線を消す*/
+      border-top: 2px solid #333;/*矢印の色*/
+      border-right: 2px solid #333;/*矢印の色*/
+      height: 15px;
+      width: 15px;
+  }
+  
+  .slick-prev {/*戻る矢印の位置と形状*/
+      left: -1.5%;
+      transform: rotate(-135deg);
+  }
+  
+  .slick-next {/*次へ矢印の位置と形状*/
+      right: -1.5%;
+      transform: rotate(45deg);
+  }
+  
+  .slick-prev::before,
+  .slick-next::before{
+    color: #494949!important;
+  }
+
+
+
+
+
+.article-all{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+  padding: 60px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.article-all p{
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+.article-text1,.article-text2{
+  width: 500px;
+}
+.text03,.text04{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+footer{
+  width: 100%;
+  height: 70px;
+  background: rgb(50, 92, 64);
+}
+footer{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
