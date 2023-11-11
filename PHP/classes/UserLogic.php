@@ -10,28 +10,50 @@ class UserLogic
    *  @return bool $result //bool = 返り値を true or false で返す
    */
   
-  public static function createUser($userData)
-  {
-    $result = false;
+  // public static function createUser($userData)
+  // {
+  //   $result = false;
     
-    $sql = 'INSERT INTO account (name, email, password) VALUES (?, ?, ?)'; 
-    //(?, ?, ?) = プレースホルダ = ユーザから入力があった値をエスケープ(SQLインジェクション対策)
-    //(?, ?, ?,)には配列で値を渡すことができる
-    // ユーザデータを配列に入れる
+  //   $sql = 'INSERT INTO account (name, email, password) VALUES (?, ?, ?)'; 
+  //   //(?, ?, ?) = プレースホルダ = ユーザから入力があった値をエスケープ(SQLインジェクション対策)
+  //   //(?, ?, ?,)には配列で値を渡すことができる
+  //   // ユーザデータを配列に入れる
+  //   $arr = [];
+  //   $arr[] = $userData['username'];
+  //   $arr[] = $userData['email'];
+  //   $arr[] = password_hash($userData['password'],
+  //   PASSWORD_DEFAULT); //第二引数が必要です
+    
+  //   try{
+  //     $stmt = connect()->prepare($sql);
+  //     $result = $stmt->execute($arr);
+  //     return $result;
+  //   } catch(Exception $e) {
+  //     return $result;
+  //   } 
+  // }
+  public static function createUser($userData)
+{
+    $result = false;
+
+    $sql = 'INSERT INTO account (name, email, password) VALUES (?, ?, ?)';
     $arr = [];
     $arr[] = $userData['username'];
     $arr[] = $userData['email'];
-    $arr[] = password_hash($userData['password'],
-    PASSWORD_DEFAULT); //第二引数が必要です
-    
-    try{
-      $stmt = connect()->prepare($sql);
-      $result = $stmt->execute($arr);
-      return $result;
-    } catch(Exception $e) {
-      return $result;
-    } 
-  }
+    $arr[] = password_hash($userData['password'], PASSWORD_BCRYPT);
+
+    try {
+        $stmt = connect()->prepare($sql);
+        $result = $stmt->execute($arr);
+        return $result;
+    } catch (Exception $e) {
+        // エラーが発生した場合の処理を記述
+        error_log('Error: ' . $e->getMessage());
+        echo 'データベースエラー: ' . $e->getMessage();
+        return false;
+    }
+}
+
   
     /** PHPDoc = コメントを書くときの共通の形式
    * ログイン処理
