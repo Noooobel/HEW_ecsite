@@ -17,7 +17,7 @@ function connect()
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC//配列を必ずkeyとvalueで返す処理 = 属性ATTR_DEFAULT_FETCH_MODE,値FETCH_ASSOC
         ]);
         return $pdo;
-    } catch(PDOExeption $e) {
+    } catch(PDOException $e) {
         echo '接続失敗です!'. $e->getMessage();
         exit();
     }
