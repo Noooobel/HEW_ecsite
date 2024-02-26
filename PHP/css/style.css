@@ -1,54 +1,58 @@
-body{
-    position:absolute;
-    top:20%;
-    left:41.5%;
-    background-color: rgb(221, 219, 219);
+body {
+  position: absolute;
+  top: 20%;
+  left: 41.5%;
+  background-color: rgb(221, 219, 219);
 }
-h2,p,a{
-    display: flex;
-    justify-content: center;
+h2,
+p,
+a {
+  display: flex;
+  justify-content: center;
 }
-h2{
-    color: rgb(50, 92, 64);
-    margin-bottom: 40px;
+h2 {
+  color: rgb(50, 92, 64);
+  margin-bottom: 40px;
 }
-p{
-    color: rgb(124, 124, 124);
-    margin-bottom: 20px;
-    font-weight:600;
+p {
+  color: rgb(124, 124, 124);
+  margin-bottom: 20px;
+  font-weight: 600;
 }
-a{
-    list-style: none;
-    text-decoration: none;
-    color: rgb(50, 92, 64);
-    transition: 0.8s;
-    font-weight:500;
+a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(50, 92, 64);
+  transition: 0.8s;
+  font-weight: 500;
 }
-a:hover{
-    color: rgb(255, 166, 50);
-    transition: 0.8s;
-    font-weight:500;
+a:hover {
+  color: rgb(255, 166, 50);
+  transition: 0.8s;
+  font-weight: 500;
 }
 
-.form{
-    background-color: rgb(255, 255, 255);
-    padding: 60px 40px 100px 40px;
-    border-radius: 10px;
-    border-style: inset;
+.form {
+  background-color: rgb(255, 255, 255);
+  padding: 60px 40px 100px 40px;
+  border-radius: 10px;
+  border-style: inset;
 }
-.email-box,.password-box{
-    width: 255px;
+.email-box,
+.password-box {
+  width: 255px;
 }
-input[type="email"],input[type="password"]{
-    padding: 10px 0 10px 0;
-    width: 275px;
-    outline: none;/* 選択した時に周りに枠がつくのでそれを消す */
-    border-radius: 5px;
+input[type="email"],
+input[type="password"] {
+  padding: 10px 0 10px 0;
+  width: 275px;
+  outline: none; /* 選択した時に周りに枠がつくのでそれを消す */
+  border-radius: 5px;
 }
-input[type="submit"]{
-    margin-top: 40px;
-    padding: 5px 70px;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    background-color: rgb(50, 92, 64);
+input[type="submit"] {
+  margin-top: 40px;
+  padding: 5px 70px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(50, 92, 64);
 }
